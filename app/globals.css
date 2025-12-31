@@ -41,7 +41,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   font-weight: 300;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   min-height: 100vh;
 }
 
@@ -53,6 +53,9 @@ body {
 
 /* Smooth transitions */
 a,
-button {
-  transition: all 0.2s ease;
+button,
+select,
+input {
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.2s ease, opacity 0.2s ease;
 }

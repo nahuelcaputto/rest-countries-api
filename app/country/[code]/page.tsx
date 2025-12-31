@@ -51,7 +51,7 @@ export default async function CountryDetailPage({ params }: PageProps) {
       {/* Back Button */}
       <Link
         href="/"
-        className="inline-flex items-center gap-3 px-8 py-2.5 rounded shadow-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-(--foreground) focus:ring-offset-4"
+        className="inline-flex items-center gap-3 px-8 py-2.5 rounded shadow-lg font-semibold hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-(--foreground) focus:ring-offset-4"
         style={{
           backgroundColor: "var(--element-bg)",
           boxShadow: "0 0 10px 2px var(--shadow)",
@@ -177,7 +177,7 @@ export default async function CountryDetailPage({ params }: PageProps) {
                   <Link
                     key={border.code}
                     href={`/country/${border.code}`}
-                    className="px-6 py-1.5 rounded-sm shadow-md text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-(--foreground) focus:ring-offset-2"
+                    className="px-6 py-1.5 rounded-sm shadow-md text-sm hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-(--foreground) focus:ring-offset-2"
                     style={{
                       backgroundColor: "var(--element-bg)",
                       boxShadow: "0 0 5px 1px var(--shadow)",

@@ -11,7 +11,7 @@ export default function CountryCard({ country }: CountryCardProps) {
   return (
     <Link
       href={`/country/${country.code}`}
-      className="group rounded-md overflow-hidden shadow-md flex flex-col h-full bg-(--element-bg) transition-all duration-300 hover:scale-[1.02] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-(--foreground)"
+      className="group rounded-md overflow-hidden shadow-md flex flex-col h-full bg-(--element-bg) hover:scale-[1.02] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-(--foreground)"
       style={{
         boxShadow: "0 0 12px 2px var(--shadow)",
       }}
@@ -30,7 +30,7 @@ export default function CountryCard({ country }: CountryCardProps) {
 
       {/* Content */}
       <div className="p-7 pb-10 flex-1 flex flex-col">
-        <h2 className="text-lg font-extrabold mb-4 leading-tight group-hover:text-blue-500 transition-colors">
+        <h2 className="text-lg font-extrabold mb-4 leading-tight group-hover:text-blue-500">
           {country.name}
         </h2>
         <div className="space-y-1.5 text-sm">

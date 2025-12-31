@@ -22,7 +22,7 @@ export default function RegionFilter({ value, onChange }: RegionFilterProps) {
       <select
         value={value}
         onChange={(e) => onChange(e.target.value as Region)}
-        className="w-full px-6 py-4 rounded-md shadow-md text-sm appearance-none cursor-pointer transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-(--foreground)"
+        className="w-full px-6 py-4 rounded-md shadow-md text-sm appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-(--foreground)"
         style={{
           backgroundColor: "var(--element-bg)",
           color: "var(--foreground)",

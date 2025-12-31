@@ -43,7 +43,7 @@ export default function SearchInput({ value, onChange }: SearchInputProps) {
         value={localValue}
         onChange={(e) => setLocalValue(e.target.value)}
         placeholder="Search for a country..."
-        className="w-full pl-20 pr-8 py-4 rounded-md shadow-md text-sm transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-(--foreground)"
+        className="w-full pl-20 pr-8 py-4 rounded-md shadow-md text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-(--foreground)"
         style={{
           backgroundColor: "var(--element-bg)",
           color: "var(--foreground)",
