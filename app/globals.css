@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+@import "tailwindcss";
+
+@theme inline {
+  /* Colors from style guide */
+  --color-blue-900: hsl(209, 23%, 22%);
+  --color-blue-950: hsl(207, 26%, 17%);
+  --color-grey-950: hsl(200, 15%, 8%);
+  --color-grey-400: hsl(0, 0%, 52%);
+  --color-grey-50: hsl(0, 0%, 98%);
+  --color-white: hsl(0, 100%, 100%);
+
+  /* Font family */
+  --font-sans: "Nunito Sans", system-ui, -apple-system, sans-serif;
+
+  /* Breakpoints */
+  --breakpoint-sm: 375px;
+  --breakpoint-lg: 1440px;
+}
+
+:root {
+  /* Light mode (default) */
+  --background: var(--color-grey-50);
+  --foreground: var(--color-grey-950);
+  --element-bg: var(--color-white);
+  --input-text: var(--color-grey-400);
+  --shadow: rgba(0, 0, 0, 0.05);
+}
+
+:root.dark {
+  /* Dark mode */
+  --background: var(--color-blue-950);
+  --foreground: var(--color-white);
+  --element-bg: var(--color-blue-900);
+  --input-text: var(--color-white);
+  --shadow: rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+/* Focus states for accessibility */
+*:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions */
+a,
+button {
+  transition: all 0.2s ease;
+}
